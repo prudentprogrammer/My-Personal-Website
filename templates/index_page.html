@@ -1,6 +1,15 @@
-{% extends "menu_bar.html" %}
-<!--{% block content %}-->
-    <!--<div class="jumbotron">-->
-      <!--<img src="{{ url_for('static', filename='cup_of_coffee.jpg') }}" alt="laptop_image"/>-->
-    <!--</div>-->
-<!--{% endblock %}-->
+  {% extends "menu_bar.html" %}
+
+  {% block customJS %}
+    <!-- Import the js file for custom animations associated to this page. -->
+    <script src=" {{ url_for('static', filename='index.js') }}"></script>
+  {% endblock %}
+
+  {% block mainBody %}
+    <div class="parallax-container">
+      <div class="parallax">
+        <img src="{{ url_for('static', filename='cup_of_coffee.jpg') }}">
+        <p>Life Enthusiast</p>
+      </div>
+    </div>
+  {% endblock %}
