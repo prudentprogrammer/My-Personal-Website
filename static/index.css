@@ -1,0 +1,11 @@
+#about_me_section {
+  margin-bottom: 0em;
+}
+
+#about_me_paragraph {
+  text-align: left;
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 300;
+  color: #00264d;
+}

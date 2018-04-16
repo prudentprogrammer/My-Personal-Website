@@ -1,0 +1,39 @@
+  {% extends "skeleton.html" %}
+
+  {% block title %}Main Page{% endblock %}
+
+  {% block customCSS %}
+    <link href="{{ url_for('static', filename='index.css') }}" rel="stylesheet">
+  {% endblock %}
+
+  {% block customJS %}
+    <!-- Import the js file for custom animations associated to this page. -->
+    <script src=" {{ url_for('static', filename='index.js') }}"></script>
+  {% endblock %}
+
+  {% block mainBody %}
+    <div class="parallax-container valign-wrapper">
+        <div class="container center">
+            <h5 class="header col s12 light white-text ">Hello there! Welcome to my website! :) </h5>
+        </div>
+      <div class="parallax"><img src="{{ url_for('static', filename='cup_of_coffee.jpg') }}"></div>
+    </div>
+
+    <div class="container-wide center blue-grey lighten-4">
+      <div class="row" id="about_me_section">
+        <!-- First Row: Profile Picture -->
+        <div class="col s12 m4 l4">
+          <img src="https://raw.githubusercontent.com/prudentprogrammer/prudentprogrammer.github.io/master/images/profile.png" class="responsive-img" style="border-radius: 15px; border-width: medium; border-color: black; margin-top: 0.7em; margin-bottom: 0.6em;"/>
+        </div>
+
+        <!-- Second Row: About Me Paragraph -->
+        <div class="col s12 m7 l7">
+          <h3 class="center">About Me</h3>
+          <p id="about_me_paragraph">I am an aspiring developer with a tremendous interest in software.
+           After poking around with different areas in computer science and software development,
+           I finally discovered my interests and dreams recently.
+           The two fields that fully engage and motivate me are full stack development and data science.</p>
+        </div>
+      </div>
+    </div>
+  {% endblock %}

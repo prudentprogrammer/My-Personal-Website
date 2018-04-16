@@ -4,10 +4,34 @@
     <link href="{{ url_for('static', filename='experience.css')}}" rel="stylesheet">
   {% endblock %}
 
+  {% block customJS %}
+  <script>
+  var elem = document.querySelector('.collapsible.expandable');
+var instance = M.Collapsible.init(elem, {
+  accordion: false
+});
+console.log('Intiialized!');
+  </script>
+  {% endblock %}
+
   {% block mainBody %}
       <div class="tiledBackground">
         <div id="introduction" class="container section center small">
-            <h2 class="white-text"><i class="small material-icons" style="padding-right:0.5em;">history</i>Work Experience</h2>
+            <h2 class="white-text"><i class="small material-icons" style="padding-right:0.5em; font-family: "Open-Sans";">history</i>Work Experience</h2>
+            <ul class="collapsible">
+              <li>
+                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+              <li>
+                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
+                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
+              </li>
+            </ul>
         </div>
       </div>
   {% endblock %}

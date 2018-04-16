@@ -1,23 +1,5 @@
-/*.hero {
-  color: #fafafa;
-  padding-top: 190px;
-  background-image: linear-gradient(50deg, HSLA(205, 62%, 44%, 1), #F62D51);
-  width: 100%;
-}
-.hero .hero-text {
-   padding-bottom: 50px;
-}
-@media only screen and (max-width: 600px) {
- .hero {
-   padding-top: 290px;
- }
-}
-.hero .hero-img-col {
- padding: 0;
- margin-bottom: -6px;
-}*/
+
 body, html {
-  //font-family: "Open Sans";
     font-size: 12px;
     height: 100%;
 }
