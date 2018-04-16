@@ -5,32 +5,34 @@
     <meta name="description" content="Arjun Bharadwaj's Webpage">
     <meta name="keywords" content="Arjun, Bharadwaj,prudentprogrammer">
     <meta name="author" content="Arjun Bharadwaj">
-    <title>Arjun's Personal Website</title>
+    <title>Test in Progress</title>
 
     <!-- Compiled and minified CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+    <!-- Personalize the web page -->
+    <!--<link rel="stylesheet" href="css/index.css">-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans" />
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    {% block customCSS %}
+    {% endblock %}
+  </head>
+
+  <body  style="font-family: "Open Sans";">
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
-
-    <!-- Personalize the web page -->
-    <!--<link rel="stylesheet" href="css/index.css">-->
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  </head>
-
-  <body>
     {% block customJS %}
     {% endblock %}
     <nav>
       <div class="nav-wrapper blue-grey darken-4">
-        <a href="#!" class="brand-logo" style="margin-left: 0.5em;">Home</a>
+        <a href="/" class="brand-logo" style="margin-left: 0.5em;">Home</a>
         <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
         <ul class="right hide-on-med-and-down">
           {% for tab in ['Experience', 'Projects', 'Education', 'Resume', 'Skills', 'Contact'] %}
-            <li><a href={{ tab.lower() + '.html'}}>{{tab}}</a></li>
+            <li><a href={{ tab.lower()}}>{{tab}}</a></li>
           {% endfor %}
         </ul>
       </div>
@@ -38,12 +40,37 @@
 
     <ul class="sidenav" id="mobile-demo">
       {% for tab in ['Experience', 'Projects', 'Education', 'Resume', 'Skills', 'Contact'] %}
-        <li><a href={{ tab.lower() + '.html'}}>{{tab}}</a></li>
+        <li><a href={{ tab.lower()}}>{{tab}}</a></li>
       {% endfor %}
     </ul>
 
     {% block mainBody %}
     {% endblock %}
 
+    <footer class="page-footer blue-grey darken-4">
+         <div class="container">
+           <div class="row">
+             <div class="col l6 s12">
+               <h5 class="white-text">Want to get in touch?</h5>
+               <p class="grey-text text-lighten-4">You can use the following links on the right to contact me. Always happy to chat! :)</p>
+             </div>
+             <div class="col l4 offset-l2 s12">
+               <h5 class="white-text">Contact Links</h5>
+               <ul>
+                 <li><a class="grey-text text-lighten-3" href="#!">Github</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">LinkedIn</a></li>
+                 <li><a class="grey-text text-lighten-3" href="#!">Medium</a></li>
+               </ul>
+             </div>
+           </div>
+         </div>
+         <div class="footer-copyright">
+           <div class="container">
+             <span class="right">
+               Last Updated On: {{ currentDate }}
+             </span>
+           </div>
+         </div>
+       </footer>
   </body>
 </html>

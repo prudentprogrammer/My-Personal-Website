@@ -12,4 +12,25 @@
         <p>Life Enthusiast</p>
       </div>
     </div>
+
+    <div class="container-wide about center blue-grey lighten-4">
+      <div class="row" style="margin-bottom: 0em;">
+        <!-- First Row -->
+        <div class="col s12 m4 l4">
+          <img src="https://raw.githubusercontent.com/prudentprogrammer/prudentprogrammer.github.io/master/images/profile.png" class="responsive-img" style="border-radius: 15px; border-width: medium; border-color: black; margin-top: 0.7em; margin-bottom: 0.6em;"/>
+        </div>
+
+        <!-- First Row -->
+        <div class="col s12 m7 l7">
+          <h3 class="center">About Me</h3>
+          <p style="display:block; text-align: left; font-size:24px; color: #00264d;font-family: "Open-Sans";">{{description}}</p>
+        </div>
+
+      </div>
+    </div>
+
+  {% endblock %}
+
+  {% block currenttime %}
+    {{ currentDate }}
   {% endblock %}
