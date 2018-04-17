@@ -1,37 +1,48 @@
-  {% extends "menu_bar.html" %}
+  {% extends "skeleton.html" %}
 
+  {% block title %}Experience{% endblock %}
   {% block customCSS %}
     <link href="{{ url_for('static', filename='experience.css')}}" rel="stylesheet">
   {% endblock %}
 
   {% block customJS %}
-  <script>
-  var elem = document.querySelector('.collapsible.expandable');
-var instance = M.Collapsible.init(elem, {
-  accordion: false
-});
-console.log('Intiialized!');
-  </script>
+    <!-- Import the js file for custom animations associated to this page. -->
+    <script src=" {{ url_for('static', filename='experience.js') }}"></script>
   {% endblock %}
 
   {% block mainBody %}
       <div class="tiledBackground">
         <div id="introduction" class="container section center small">
-            <h2 class="white-text"><i class="small material-icons" style="padding-right:0.5em; font-family: "Open-Sans";">history</i>Work Experience</h2>
-            <ul class="collapsible">
-              <li>
-                <div class="collapsible-header"><i class="material-icons">filter_drama</i>First</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="material-icons">place</i>Second</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-              </li>
-              <li>
-                <div class="collapsible-header"><i class="material-icons">whatshot</i>Third</div>
-                <div class="collapsible-body"><span>Lorem ipsum dolor sit amet.</span></div>
-              </li>
-            </ul>
+            <h2 class="white-text"><i class="small material-icons" style="padding-right:0.5em; font-family: "Open-Sans"; font-style: italic;">history</i>Work Experience</h2>
         </div>
+
+
+        <div class="container">
+          <ul>
+            <li><span></span>
+              <div>
+                <div class="title">iOS Developer, Bank of America</div>
+                <div class="info">Let&apos;s make coolest thsdfjhsdfkjdsjkfhings in css sdfjhdsjhdslkfjsdlkfjsdfkl sdlfjsdkfjdslkfjdslkf j</div>
+
+              </div> <span class="number"><span>April 1st</span> <span>12:00</span></span>
+            </li>
+            <li>
+              <div><span></span>
+                <div class="title">Data Analyst / Student Programmer</div>
+                <div class="info">Let&apos;s make coolest things in javascript</div>
+              </div> <span class="number"><span>13:00</span> <span>14:00</span></span>
+            </li>
+            <li>
+              <div><span></span>
+                <div class="title">Codify</div>
+                <div class="info">Let&apos;s make coolest things in css</div>
+                <div class="type">Review</div>
+              </div> <span class="number"><span>15:00</span> <span>17:45</span></span>
+            </li>
+          </ul>
+        </div>
+
+
+
       </div>
   {% endblock %}
