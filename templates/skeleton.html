@@ -34,7 +34,7 @@
         <a href="/index" class="brand-logo" style="margin-left: 0.5em;">Home</a>
         <a href="/index" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">Home</i></a>
         <ul class="right hide-on-med-and-down">
-          {% for tab in ['Experience', 'Projects', 'Education', 'Resume', 'Skills', 'Contact'] %}
+          {% for tab in ['Experience', 'Education', 'Projects', 'Resume', 'Contact'] %}
             <li><a href={{ tab.lower()}}>{{tab}}</a></li>
           {% endfor %}
         </ul>
@@ -43,7 +43,7 @@
 
     <!-- For Mobile Interfaces -->
     <ul class="sidenav blue-grey darken-4" id="mobile-demo">
-      {% for tab in ['Experience', 'Projects', 'Education', 'Resume', 'Skills', 'Contact'] %}
+      {% for tab in ['Experience', 'Education', 'Projects', 'Resume', 'Contact'] %}
         <li><a href={{ tab.lower()}} class="white-text">{{tab}}</a></li>
       {% endfor %}
     </ul>

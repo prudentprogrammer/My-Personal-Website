@@ -1,0 +1,88 @@
+{% extends "skeleton.html" %}
+
+{% block title %}Education{% endblock %}
+{% block customCSS %}
+  <link href="{{ url_for('static', filename='education.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block customJS %}
+  <!-- Import the js file for custom animations associated to this page. -->
+  <script src=" {{ url_for('static', filename='education.js') }}"></script>
+{% endblock %}
+
+
+{% block mainBody %}
+    <div id="introduction" class="container section">
+      <h2 id="experienceTitle"><i class="medium material-icons" id="workIcon">school</i>Education</h2>
+      <h5>Professional Degrees</h5>
+    </div>
+
+
+    <div class="container section">
+      <ul class="collection green-text text-darken-4">
+        <li class="collection-item avatar light-green lighten-5">
+          <img src="https://github.com/prudentprogrammer/prudentprogrammer.github.io/blob/master/images/ucdavis.png?raw=true" alt="" class="circle ucdavis">
+          <strong>
+            <span class="title">Master of Science</span>
+            <p>Computer Science<br/>
+               University of California, Davis<br/>
+               2015 - Present
+            </p>
+            </strong>
+            <a href="http://www.cs.ucdavis.edu/graduate/" class="secondary-content"><i class="material-icons">wb_cloudy</i></a>
+        </li>
+
+        <li class="collection-item avatar light-green lighten-5">
+          <img src="https://github.com/prudentprogrammer/prudentprogrammer.github.io/blob/master/images/ucdavis.png?raw=true" alt="" class="circle ucdavis">
+          <strong>
+            <span class="title">Bachelor of Science</span>
+            <p>Computer Science and Engineering<br/>
+              University of California, Davis<br/>
+               2012 - 2015
+            </p>
+          </strong>
+          <a href="http://www.cs.ucdavis.edu/undergraduate/" class="secondary-content"><i class="material-icons">memory</i></a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="container section">
+      <h5>Classes Taken</h5>
+
+      <ul class="collapsible popout">
+        <li class="active">
+          <div class="collapsible-header light-green lighten-5 green-text text-darken-4"><i class="material-icons">star</i><strong>Graduate Courses</strong></div>
+          <div class="collapsible-body grey lighten-4 grey-text text-darken-4">
+            <ul>
+              {% for class in classes_dict['G'] %}
+                <li><i class="tiny material-icons">class</i> {{class}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header light-green lighten-5 green-text text-darken-4"><i class="material-icons">star</i><strong>Undergraduate Courses</strong></div>
+          <div class="collapsible-body grey lighten-4 grey-text text-darken-4">
+            <ul>
+              {% for class in classes_dict['UG'] %}
+                <li><i class="tiny material-icons">class</i> {{class}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+        <li>
+          <div class="collapsible-header light-green lighten-5 green-text text-darken-4"><i class="material-icons">star</i><strong>Miscellaneous CS Courses</strong></div>
+          <div class="collapsible-body grey lighten-4 grey-text text-darken-4">
+            <ul>
+              {% for class in classes_dict['O'] %}
+                <li><i class="tiny material-icons">class</i> {{class}}</li>
+              {% endfor %}
+            </ul>
+          </div>
+        </li>
+      </ul>
+
+    </div>
+
+
+{% endblock %}
