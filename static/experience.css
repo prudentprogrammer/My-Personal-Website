@@ -4,90 +4,90 @@ body, html {
 }
 
 .tiledBackground {
-  background-image: url('natural_background.jpg'); //url('https://raw.githubusercontent.com/prudentprogrammer/prudentprogrammer.github.io/master/images/blue_background.jpg');
-  //background-image: linear-gradient(50deg, #141E30, #243B55);
+  //background-image: url('natural_background.jpg'); //url('https://raw.githubusercontent.com/prudentprogrammer/prudentprogrammer.github.io/master/images/blue_background.jpg');
+  background-image: linear-gradient(50deg, #141E30, #243B55);
+  //background-color: #F4F4F4;
   background-size: 100% 100%;
   width: 100%;
   height: 100%;
 }
-.container ul {
+
+#timeline .container ul {
   margin: 0;
   list-style: none;
   position: relative;
-  padding: 2px 40px;
-  color: #fff;
-  width: 80%;
-  font-size: 13px;
-  box-sizing: content-box;
+  padding: 4px 40px;
+  color: black;
+  font-size: 14px;
 }
-.container ul:before {
+#timeline .container ul:before {
   content: "";
   width: 10px;
-  height: 100%;
+  height: 90%;
   position: absolute;
-  border-left: 2px dashed #fff;
+  border-left: 2px dashed #696969;
 }
-.container ul li {
+#timeline .container ul li {
   position: relative;
   margin-left: 30px;
-  background-color: rgba(255, 255, 255, 0.2);
+  background-color: #D8D8D8;
   padding: 14px;
   border-radius: 10px;
-  width: 90%;
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.12), 0 2px 2px rgba(0, 0, 0, 0.08);
-  box-sizing: border-box;
+  width: 100%;
+  box-shadow: 0 0 4px #696969, 0 2px 2px rgba(0, 0, 0, 0.08);
 }
-.container ul li:not(:first-child) {
+#timeline .container ul li:not(:first-child) {
   margin-top: 60px;
 }
-.container ul li > span {
-  width: 2px;
+#timeline .container ul li > span {
+  width: 3px;
   height: 100%;
-  background: #fff;
+  background: #696969;
   left: -30px;
   top: 0;
   position: absolute;
 }
-.container ul li > span:before, .container ul li > span:after {
+#timeline .container ul li > span:before, .container ul li > span:after {
   content: "";
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  border: 2px solid #fff;
+  border: 2px solid #696969;
   position: absolute;
   background: #86b7e7;
   left: -5px;
   top: 0;
 }
-.container ul li span:after {
+#timeline .container ul li span:after {
   top: 100%;
 }
-.container ul li > div {
+#timeline .container ul li > div {
   margin-left: 10px;
 }
-.container div .title, .container div .type {
+#timeline .container div .title, .container div .type {
   font-weight: 600;
   font-size: 18px;
 }
-.container div .info {
+#timeline .container div .info {
   font-weight: 300;
   font-size: 16px;
 }
-.container div > div {
+#timeline .container div > div {
   margin-top: 5px;
 }
-.container span.number {
+#timeline .container span.number {
   height: 100%;
 }
-.container span.number span {
+#timeline .container span.number span {
   position: absolute;
-  font-size: 10px;
-  left: -35px;
+  font-size: 14px;
+  left: -40px;
   font-weight: bold;
+  color: white;
 }
-.container span.number span:first-child {
+#timeline .container span.number span:first-child {
   top: 0;
 }
-.container span.number span:last-child {
+#timeline .container span.number span:last-child {
   top: 100%;
 }
