@@ -14,7 +14,11 @@
   {% block mainBody %}
     <div class="parallax-container valign-wrapper">
         <div class="container center">
-            <h5 class="header col s12 light white-text ">Hello there! Welcome to my website! :) </h5>
+            <div class="card-panel" >
+              <p class="white-text">
+                Hey there! :) Welcome to my website! Feel free to browse around here. There are a cool stuff but if you want to know more about me, you can check out my <a href="">Resume</a> as well as my <a href="">Projects.</a>
+              </p>
+            </div>
         </div>
       <div class="parallax"><img src="{{ url_for('static', filename='cup_of_coffee.jpg') }}"></div>
     </div>

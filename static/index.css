@@ -17,3 +17,16 @@ nav ul {
   font-weight: 300;
   color: #00264d;
 }
+
+.card-panel{
+  //color: #500e0e9c;
+  background-color: rgba(132, 29, 33, 0.5);
+  opacity: 20%;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.card-panel>p>a{
+  color: #90EE90;
+  text-decoration: underline;
+}
