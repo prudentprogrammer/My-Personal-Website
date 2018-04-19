@@ -1,0 +1,15 @@
+body {
+  background: rgba(63, 167, 115, 0.644);
+}
+
+.description, .title {
+  color: darkblue;
+}
+
+.title {
+  font-weight: bold;
+}
+
+img {
+  margin-top: 10px;
+}
