@@ -1,0 +1,71 @@
+{% extends "skeleton.html" %}
+
+{% block title %}Projects{% endblock %}
+
+{% block customCSS %}
+  <link href="{{ url_for('static', filename='projects.css') }}" rel="stylesheet">
+{% endblock %}
+
+{% block customJS %}
+  <!-- Import the js file for custom animations associated to this page. -->
+  <script src=" {{ url_for('static', filename='projects.js') }}"></script>
+{% endblock %}
+
+
+{% block mainBody %}
+  <div class="container">
+    <h2 class="center">Projects</h2>
+    <div class="row">
+      <div class="col s12 m6">
+        <h2 class="center">Brogram App</h2>
+        <p class="project-description">
+        Literally venmo before they sold out, DIY heirloom forage polaroid offal yr pop-up selfies health goth. Typewriter scenester hammock truffaut meditation, squid before they sold out polaroid portland tousled taxidermy vice. Listicle butcher thundercats, taxidermy pitchfork next level roof party crucifix narwhal kinfolk you probably haven't heard of them portland small batch.
+        </p>
+      </div>
+
+      <div class="col s12 m6">
+        <div class="card medium" style="margin-top: 30px;">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="https://images.pexels.com/photos/39811/pexels-photo-39811.jpeg">
+          </div>
+          <div class="card-content">
+            <p><a href="/experience">Click here for more info</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>Here is some more information about this product that is only revealed once clicked on.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <hr />
+    <div class="row">
+      <div class="col s12 m6">
+        <div class="card medium">
+          <div class="card-image waves-effect waves-block waves-light">
+            <img class="activator" src="http://hennepinonline.info/wp-content/uploads/2018/02/best-of-beautiful-nature-rain-wallpapers-free-6.jpg">
+          </div>
+          <div class="card-content">
+            <p><a href="/experience">Click here for more info</a></p>
+          </div>
+          <div class="card-reveal">
+            <span class="card-title grey-text text-darken-4">Card Title<i class="material-icons right">close</i></span>
+            <p>How can the hog trek? When can the comedy illustrate a blanket creature? The verbal motive suspects in a felt memory. A tremendous prison pants beneath the dedicate flood. How does a retired sacrifice play the crossing cake? Does a stereo achieve a percentage?.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="col s12 m6">
+        <h2>Project 2</h2>
+        <p class="project-description">
+        Every delight chords the stuff. Outside the sail lurks whatever smart plate. The conduct leaks? The kitchen rattles on top of the circuitry! Should a pace transform my jam? An implausible motorway traces a permissible agent.
+        </p>
+      </div>
+
+
+    </div>
+
+  </div>
+
+{% endblock %}

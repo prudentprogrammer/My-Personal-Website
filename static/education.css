@@ -4,3 +4,19 @@ body {
 .ucdavis {
   margin-top: 20px;
 }
+
+.class_name {
+  font-size: 16px;
+}
+
+.collapsible-header, .collapsible-body {
+  font-size: 16px;
+}
+
+.title {
+  font-size: 18px;
+}
+
+.description {
+  font-size: 16px;
+}

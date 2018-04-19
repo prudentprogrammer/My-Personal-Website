@@ -1,0 +1,13 @@
+.project-description {
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 2;
+}
+
+.container {
+  font-family: "Open Sans";
+}
+
+.card.medium {
+  height: auto;
+}

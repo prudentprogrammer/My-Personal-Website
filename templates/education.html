@@ -24,7 +24,7 @@
           <img src="https://github.com/prudentprogrammer/prudentprogrammer.github.io/blob/master/images/ucdavis.png?raw=true" alt="" class="circle ucdavis">
           <strong>
             <span class="title">Master of Science</span>
-            <p>Computer Science<br/>
+            <p class="description">Computer Science<br/>
                University of California, Davis<br/>
                2015 - Present
             </p>
@@ -36,7 +36,7 @@
           <img src="https://github.com/prudentprogrammer/prudentprogrammer.github.io/blob/master/images/ucdavis.png?raw=true" alt="" class="circle ucdavis">
           <strong>
             <span class="title">Bachelor of Science</span>
-            <p>Computer Science and Engineering<br/>
+            <p class="description">Computer Science and Engineering<br/>
               University of California, Davis<br/>
                2012 - 2015
             </p>
@@ -48,6 +48,7 @@
 
     <div class="container section">
       <h5>Courses Completed</h5>
+      <p>I have had the privelege of taking the following courses:</p>
 
       <ul class="collapsible popout">
         <li class="active">
@@ -55,7 +56,7 @@
           <div class="collapsible-body grey lighten-4 grey-text text-darken-4">
             <ul>
               {% for class in classes_dict['G'] %}
-                <li><i class="tiny material-icons">class</i> {{class}}</li>
+                <li><i class="tiny material-icons">class</i> <span class="class_name">{{class}}</span></li>
               {% endfor %}
             </ul>
           </div>
@@ -65,7 +66,7 @@
           <div class="collapsible-body grey lighten-4 grey-text text-darken-4">
             <ul>
               {% for class in classes_dict['UG'] %}
-                <li><i class="tiny material-icons">class</i> {{class}}</li>
+                <li><i class="tiny material-icons">class</i> <span class="class_name">{{class}}</span></li>
               {% endfor %}
             </ul>
           </div>
