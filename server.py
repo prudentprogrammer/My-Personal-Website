@@ -19,11 +19,15 @@ def education():
     print(getClasses())
     return render_template('education.html', classes_dict=getClasses())
 
+@app.route('/projects')
+def projects():
+    return render_template('project.html')
+
 @app.context_processor
 def getCurrentDate():
   return dict(current_date = datetime.datetime.now().strftime("%d %B %Y"))
 
-# Helper function to extract classes taken at university
+# Helper function to read the classes taken from csv file
 def getClasses():
     classes_dict = defaultdict(list)
     file_handler = open('static/classes.csv', 'rb')
