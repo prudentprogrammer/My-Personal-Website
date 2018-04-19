@@ -33,7 +33,7 @@ def getCurrentDate():
 # Helper function to read the classes taken from csv file
 def getClasses():
     classes_dict = defaultdict(list)
-    file_handler = open('static/classes.csv', 'rb')
+    file_handler = open('static/assets/classes.csv', 'rb')
     reader = csv.reader(file_handler)
     for row in reader:
         class_name, level = row[0].strip(), row[1].strip()

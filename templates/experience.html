@@ -2,12 +2,12 @@
 
   {% block title %}Experience{% endblock %}
   {% block customCSS %}
-    <link href="{{ url_for('static', filename='experience.css')}}" rel="stylesheet">
+    <link href="../static/css/experience.css" rel="stylesheet">
   {% endblock %}
 
   {% block customJS %}
     <!-- Import the js file for custom animations associated to this page. -->
-    <script src=" {{ url_for('static', filename='experience.js') }}"></script>
+    <script src="../static/js/experience.js"></script>
   {% endblock %}
 
   {% block mainBody %}
@@ -42,8 +42,5 @@
             </ul>
           </div>
         </div>
-
-
-
       </div>
   {% endblock %}
