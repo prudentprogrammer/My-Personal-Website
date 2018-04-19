@@ -16,12 +16,15 @@ def experiences():
 
 @app.route('/education')
 def education():
-    print(getClasses())
     return render_template('education.html', classes_dict=getClasses())
 
 @app.route('/projects')
 def projects():
     return render_template('project.html')
+
+@app.route('/contact')
+def contact():
+    return render_template('contact.html')
 
 @app.context_processor
 def getCurrentDate():
