@@ -1,0 +1,15 @@
+{% extends "skeleton.html" %}
+
+{% block title %}Contact Me{% endblock %}
+{% block customCSS %}
+  <link href="{{ url_for('static', filename='contact.css')}}" rel="stylesheet">
+{% endblock %}
+
+{% block customJS %}
+  <!-- Import the js file for custom animations associated to this page. -->
+  <script src=" {{ url_for('static', filename='contact.js') }}"></script>
+{% endblock %}
+
+
+{% block mainBody %}
+{% endblock %}
