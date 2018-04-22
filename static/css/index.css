@@ -18,6 +18,13 @@ nav ul {
   color: #00264d;
 }
 
+#about_me_image {
+  border-radius: 15px; 
+  border-width: medium; 
+  border-color: black; 
+  margin: 0.7em 0 0.6em 20px;
+}
+
 .card-panel{
   //color: #500e0e9c;
   background-color: rgba(132, 29, 33, 0.5);

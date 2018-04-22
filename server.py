@@ -27,7 +27,7 @@ def contact():
     return render_template('contact.html')
 
 @app.route('/bouncy_ball')
-def contact():
+def bouncyball():
     return render_template('bouncyball.html')
 
 @app.context_processor
