@@ -23,6 +23,10 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
     <!-- Custom JS scripts -->
+
+    <!-- Insert favicon -->
+    <link rel="icon" href="/static/assets/favicon.ico">
+
     {% block customJS %}
     {% endblock %}
   </head>
@@ -41,7 +45,11 @@
                                   ('contact', 'Contact Me'),
                                   ('bouncy_ball', 'Bored?')
                                  ]: %}
-            <li><a href="{{ href }}">{{ caption }}</a></li>
+            {% if caption != 'Resume' %}
+              <li><a href="{{ href }}">{{ caption }}</a></li>
+            {% else %}
+              <li><a href="{{ href }}" target="_blank">{{ caption }}</a></li>
+            {% endif %}
           {% endfor %}
         </ul>
       </div>
