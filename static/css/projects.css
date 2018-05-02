@@ -11,3 +11,13 @@
 .card.medium {
   height: auto;
 }
+
+.material-icons {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  padding-right: 5px;
+}
+
+/* .project-title {
+  margin-bottom: 10px;
+} */
