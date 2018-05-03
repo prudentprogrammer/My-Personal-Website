@@ -57,8 +57,14 @@
 
     <!-- For Mobile Interfaces -->
     <ul class="sidenav blue-grey darken-4" id="mobile-demo">
-      {% for tab in ['Experience', 'Education', 'Projects', 'Resume', 'Contact', 'Bored?'] %}
-        <li><a href={{ tab.lower()}} class="white-text">{{tab}}</a></li>
+      {% for href, caption in [('experience', 'Experience'),
+                                  ('education', 'Education'),
+                                  ('projects', 'Projects'),
+                                  ('../static/assets/arjun_bharadwaj_resume.pdf', 'Resume'),
+                                  ('contact', 'Contact Me'),
+                                  ('bouncy_ball', 'Bored?')
+                                 ]: %}
+          <li><a href="{{ href }}" class="white-text">{{ caption }}</a></li>
       {% endfor %}
     </ul>
 
@@ -72,7 +78,7 @@
         <div class="row">
           <div class="col l6 s12">
             <h5 class="white-text">Want to get in touch?</h5>
-            <p class="grey-text text-lighten-4">You can use the following links on the right to contact me. Always happy to chat! :)</p>
+            <p class="grey-text text-lighten-4">You can use the following links on the right to contact me. Always happy to chat! 😄</p>
           </div>
           <div class="col l4 offset-l2 s12">
             <h5 class="white-text">Contact Links</h5>
