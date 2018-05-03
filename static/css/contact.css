@@ -1,5 +1,7 @@
 body {
   background: rgba(63, 167, 115, 0.644);
+  height: 100%;
+  line-height: 2.0;
 }
 
 .description, .title {
@@ -15,7 +17,7 @@ img {
 }
 
 .collection {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
   /* border: darkblue; */
   border-color: dimgray;
   border-width: 1px;
