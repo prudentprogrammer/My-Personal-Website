@@ -8,3 +8,7 @@ canvas {
   margin: 30px auto;
   border: 2px solid black;
 }
+
+tr {
+  border-bottom: 0px solid;
+}
