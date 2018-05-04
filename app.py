@@ -26,6 +26,10 @@ def projects():
 def contact():
     return render_template('contact.html')
 
+@app.route('/bouncy_ball')
+def bouncy_ball():
+    return render_template('bouncyball.html')
+
 @app.context_processor
 def getCurrentDate():
   return dict(current_date = datetime.datetime.now().strftime("%d %B %Y"))
